@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "../../components";
 import styles from "./styles.module.css";
 
-const Keypad = ({displayExp}) => {
+const Keypad = () => {
 
   const keys_values = [
     {
@@ -117,7 +117,7 @@ const Keypad = ({displayExp}) => {
   return (
     <div className={`${styles.keypad} `}>
       {keys_values.map((singleKey) => {
-        return <Button key={singleKey.label} {...singleKey} displayExp = {displayExp} />;
+        return <Button key={singleKey.label} {...singleKey} />;
       })}
     </div>
   );

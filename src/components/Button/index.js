@@ -6,7 +6,6 @@ const Button = ({
   label = "label",
   type = "button",
   customClassName="",
-  displayExp,
   theme = "theme1",
   buttonGroupName = "operand", //can be "equal" || "operand" || "action"
   ...props
@@ -20,7 +19,6 @@ const Button = ({
         ${styles[buttonGroupName]}
         ${customClassName} 
       `}
-      onClick = {displayExp}
       {...props}
     >
       {label}

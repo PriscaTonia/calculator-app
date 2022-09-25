@@ -18,19 +18,22 @@
 .inputGroup {
     background-color: var( --toggle-bg);
     display: flex;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 .themeTitle{
     align-self: flex-end;
+    letter-spacing: 2px;
     padding-right: 10px ;
     text-transform: uppercase;
     font-size: 14px;
 }
 .themeNumber{
     display: flex;
-    font-size: 18px;
+    width: 90%;
+    font-size: 14px;
     font-weight: 600;
-    justify-content: space-evenly;
+    padding-bottom: 5px;
+    justify-content: space-between;
 }
 input[type="radio"] {
     appearance: none;
@@ -60,3 +63,30 @@ input[type="radio"] {
   input[type="radio"]:checked::before {
     transform: scale(1);
   }
+
+  /* Mobile Styles */
+@media only screen and (min-width: 300px ) and (max-width: 600px),
+only screen and (min-device-width: 300px) and (max-device-width: 600px){
+ .header{
+    height: 120px;
+ }
+ input[type="radio"] {
+    width: 1em;
+    height: 1.2em;
+ }
+ input[type="radio"]::before {
+    width: 0.8em;
+    height: 0.8em;
+ }
+ .calc{
+    font-size: 32px;
+}
+.inputGroup {
+    width: 80px;
+    padding: 2px;
+}
+.themeNumber{
+    width: 90%;
+}
+}
+  

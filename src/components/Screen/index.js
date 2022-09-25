@@ -2,9 +2,10 @@ import styles from './styles.module.css'
 
 
 const Screen = () => {
+   
     return ( 
         <div className = {`${styles.screen}`}>
-            399,999
+             123,456
         </div>
      );
 }

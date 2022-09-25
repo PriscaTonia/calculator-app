@@ -18,3 +18,15 @@
 .enter{
     grid-column: span 2;
 }
+
+/* Mobile Styles */
+@media only screen and (min-width: 300px ) and (max-width: 600px),
+ only screen and (min-device-width: 300px) and (max-device-width: 600px){
+    .keypad{
+        min-height: 450px;
+        grid-gap: 8px;
+        grid-template-rows: repeat(5, 70px);
+        border-radius: 12px;
+    }
+ }
+  
