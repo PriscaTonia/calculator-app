@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --clc-white: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
 }
+
+/* Declaring the deault theme styles using css variables */
+.theme1{
+  --main-background: hsl(222, 26%, 31%) ;
+  --keypad-background: hsl(223, 31%, 20%) ;
+  --screen-background:  hsl(224, 36%, 15%) ;
+
+  --key-action-bg: hsl(225, 21%, 49%);
+  --key-action-shadow: hsl(224, 28%, 35%) ;
+
+  --key-equal-bg:  hsl(6, 63%, 50%) ;
+  --key-equal-shadow:  hsl(6, 70%, 34%) ;
+
+  --key-operand-bg: hsl(30, 25%, 89%) ;
+  --key-operand-shadow: hsl(28, 16%, 65%) ;
+  --key-operand-text: hsl(221, 14%, 31%) ;
+
+  --header-group: white;
+  --toggle-bg: hsl(224, 36%, 15%) ;
+  --attribution: white;
+}
+
+
+/* .App{
+  position: relative;
+} */
+
+/* Declaring the remaining themes */
+.theme2{
+  --main-background: hsl(0, 0%, 90%) ;
+  --keypad-background:  hsl(0, 5%, 81%) ;
+  --screen-background:  hsl(0, 0%, 93%) ;
+
+  --key-action-bg: hsl(185, 42%, 37%);
+  --key-action-shadow: hsl(185, 58%, 25%) ;
+
+  --key-equal-bg:   hsl(25, 98%, 40%) ;
+  --key-equal-shadow: hsl(25, 99%, 27%) ;
+
+  --key-operand-bg:  hsl(45, 7%, 89%) ;
+  --key-operand-shadow: hsl(35, 11%, 61%) ;
+  --key-operand-text: hsl(60, 10%, 19%) ;
+
+  --header-group: hsl(60, 10%, 19%) ;
+  --toggle-bg:  hsl(0, 5%, 81%) ;
+  --attribution: hsl(60, 10%, 19%);
+}
+
+.theme3{
+  --main-background: hsl(268, 75%, 9%);
+  --keypad-background:hsl(268, 71%, 12%) ;
+  --screen-background: hsl(268, 71%, 12%);
+
+  --key-action-bg: hsl(281, 89%, 26%);
+  --key-action-shadow: hsl(285, 91%, 52%) ;
+
+  --key-equal-bg:  hsl(176, 100%, 44%);
+  --key-equal-shadow:   hsl(177, 92%, 70%) ;
+
+  --key-operand-bg:    hsl(268, 47%, 21%);
+  --key-operand-shadow:   hsl(290, 70%, 36%);
+  --key-operand-text: hsl(52, 100%, 62%)  ;
+
+  --header-group:  hsl(52, 100%, 62%) ;
+  --toggle-bg:   hsl(268, 71%, 12%) ;
+  --attribution:  hsl(52, 100%, 62%);
+}
+
+
+main{
+  background-color: var(--main-background);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+
+

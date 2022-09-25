@@ -1,0 +1,62 @@
+.header{
+    width: 380px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--header-group);   
+    font-size: 20px;
+}
+.calc{
+    font-size: 27px;
+}
+.themeGroup{
+    display: flex;
+    margin-bottom: 17px;
+}
+
+.inputGroup {
+    background-color: var( --toggle-bg);
+    display: flex;
+    border-radius: 8px;
+}
+.themeTitle{
+    align-self: flex-end;
+    padding-right: 10px ;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.themeNumber{
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: space-evenly;
+}
+input[type="radio"] {
+    appearance: none;
+    background-color: var( --toggle-bg);
+    margin: 0;
+    font: inherit;
+    /* color: var( --key-equal-bg); */
+    width: 1em;
+    height: 1em;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+  }
+
+  input[type="radio"]::before {
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    transform: scale(0);
+    box-shadow: inset 1em 1em var(--key-equal-bg);
+    background-color: CanvasText;
+  }
+
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }

@@ -1,0 +1,13 @@
+.screen {
+  width: 380px;
+  height: 100px;
+  background-color: var(--screen-background);
+  margin-bottom: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--header-group);
+  font-size: 32px;
+  padding: 20px;
+}
