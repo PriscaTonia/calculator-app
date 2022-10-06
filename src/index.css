@@ -28,6 +28,7 @@
   --header-group: white;
   --toggle-bg: hsl(224, 36%, 15%) ;
   --attribution: white;
+  --attribution-color:hsl(224, 36%, 15%)  ;
 }
 
 
@@ -54,6 +55,7 @@
   --header-group: hsl(60, 10%, 19%) ;
   --toggle-bg:  hsl(0, 5%, 81%) ;
   --attribution: hsl(60, 10%, 19%);
+  --attribution-color: black ;
 }
 
 .theme3{
@@ -74,6 +76,7 @@
   --header-group:  hsl(52, 100%, 62%) ;
   --toggle-bg:   hsl(268, 71%, 12%) ;
   --attribution:  hsl(52, 100%, 62%);
+  --attribution-color: white;
 }
 
 

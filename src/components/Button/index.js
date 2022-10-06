@@ -6,6 +6,7 @@ const Button = ({
   label = "label",
   type = "button",
   customClassName="",
+  handleKeyPress,
   theme = "theme1",
   buttonGroupName = "operand", //can be "equal" || "operand" || "action"
   ...props
@@ -20,6 +21,7 @@ const Button = ({
         ${customClassName} 
       `}
       {...props}
+      onClick = {handleKeyPress}
     >
       {label}
     </button>
