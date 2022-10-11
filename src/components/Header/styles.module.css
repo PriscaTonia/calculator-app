@@ -18,12 +18,14 @@
 .inputGroup {
     background-color: var( --toggle-bg);
     display: flex;
+    justify-content: space-evenly;
+    width: 80px;
     border-radius: 15px;
 }
 .themeTitle{
     align-self: flex-end;
     letter-spacing: 2px;
-    padding-right: 10px ;
+    padding-right: 30px ;
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -69,9 +71,10 @@ input[type="radio"] {
   }
 
   /* Mobile Styles */
-@media only screen and (min-width: 300px ) and (max-width: 600px),
+@media only screen and (min-width: 350px ) and (max-width: 600px),
 only screen and (min-device-width: 300px) and (max-device-width: 600px){
  .header{
+    width: 300px;
     height: 120px;
  }
  input[type="radio"] {
@@ -83,7 +86,7 @@ only screen and (min-device-width: 300px) and (max-device-width: 600px){
     height: 0.8em;
  }
  .calc{
-    font-size: 32px;
+    font-size: 35px;
 }
 .inputGroup {
     padding: 3px;
@@ -93,3 +96,29 @@ only screen and (min-device-width: 300px) and (max-device-width: 600px){
 }
 }
   
+
+  /* Mobile Styles */
+  @media only screen and (min-width: 450px ) and (max-width: 600px),
+  only screen and (min-device-width: 450px) and (max-device-width: 600px){
+   .header{
+      width: 400px;
+      height: 120px;
+   }
+   input[type="radio"] {
+      width: 1em;
+      height: 1.2em;
+   }
+   input[type="radio"]::before {
+      width: 0.8em;
+      height: 0.8em;
+   }
+   .calc{
+      font-size: 35px;
+  }
+  .inputGroup {
+      padding: 3px;
+  }
+  .themeNumber{
+      width: 90%;
+  }
+  }

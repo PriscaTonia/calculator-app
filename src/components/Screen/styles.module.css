@@ -16,6 +16,17 @@
  @media only screen and (min-width: 300px ) and (max-width: 600px),
  only screen and (min-device-width: 300px) and (max-device-width: 600px){
   .screen{
+    width: 300px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+  }
+ }
+
+ /* Mobile Styles */
+ @media only screen and (min-width: 450px ) and (max-width: 600px),
+ only screen and (min-device-width: 450px) and (max-device-width: 600px){
+  .screen{
+    width: 400px;
     margin-bottom: 25px;
     border-radius: 12px;
   }

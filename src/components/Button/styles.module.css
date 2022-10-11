@@ -14,7 +14,7 @@
 
 .big {
   width: 100%;
-  min-width: 150px;
+  max-width: 150px;
   padding: 10px 0px 5px 0px;
 }
 
@@ -54,14 +54,27 @@
 
 
 /* Mobile Styles */
-@media only screen and (min-width: 300px ) and (max-width: 600px),
- only screen and (min-device-width: 300px) and (max-device-width: 600px){
+@media only screen and (min-width: 300px ) and (max-width: 400px),
+ only screen and (min-device-width: 300px) and (max-device-width: 400px){
   .small {
-    max-width: 70px;
+    max-width: 60px;
+    padding: 15px 0px 8px 0px;
+  }
+  .big {
+    max-width: 130px;
+    padding: 15px 0px 8px 0px;
+    
+  }
+}
+/* Mobile Styles */
+@media only screen and (min-width: 450px ) and (max-width: 600px),
+ only screen and (min-device-width: 450px) and (max-device-width: 600px){
+  .small {
+    max-width: 80px;
     padding: 20px 0px 15px 0px;
   }
   .big {
-    min-width: 150px;
+    max-width: 150px;
     padding: 20px 0px 15px 0px;
   }
 }
