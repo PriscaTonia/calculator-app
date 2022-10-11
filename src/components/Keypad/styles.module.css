@@ -1,7 +1,6 @@
 .keypad{
     width: 380px;
     height: 320px;
-    /* padding: 30px; */
     display: grid;
     place-items: center;
     place-content: center;
@@ -23,12 +22,20 @@
 @media only screen and (min-width: 300px ) and (max-width: 600px),
  only screen and (min-device-width: 300px) and (max-device-width: 600px){
     .keypad{
-        width: 300px;
-        min-height: 450px;
-        grid-gap: 0px;
+        width: 320px;
+        min-height: 420px;
+        grid-gap:3px;
         grid-template-columns: repeat(4, 70px);
-        grid-template-rows: repeat(5, 70px);
+        grid-template-rows: repeat(5, 75px);
         border-radius: 12px;
+    }
+    .reset, .enter{
+        font-size: 20px;
+        padding: 20px 0px;
+    }
+    .del{
+        font-size: 20px;
+        padding: 20px 0px;
     }
  }
   
@@ -37,10 +44,10 @@
 @media only screen and (min-width: 450px ) and (max-width: 600px),
 only screen and (min-device-width: 450px) and (max-device-width: 600px){
    .keypad{
-       width: 400px;
+       width: 380px;
        min-height: 450px;
-       grid-gap: 8px;
-       grid-template-columns: repeat(4, 80px);
+       grid-gap: 10px;
+       grid-template-columns: repeat(4, 70px);
        grid-template-rows: repeat(5, 70px);
        border-radius: 12px;
    }

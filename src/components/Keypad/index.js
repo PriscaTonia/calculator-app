@@ -26,7 +26,7 @@ const Keypad = ({handleKeyPress}) => {
     {
       label: "DEL",
       size: "small",
-      customClassName: "del",
+      customClassName: styles.del,
       buttonGroupName: "action",
     },
     {
