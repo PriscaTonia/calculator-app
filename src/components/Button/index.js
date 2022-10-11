@@ -1,14 +1,14 @@
-import React from "react";
-import styles from "./styles.module.css";
+import React from 'react'
+import styles from './styles.module.css'
 
 const Button = ({
-  size = "small", // "small" || "big"
-  label = "label",
-  type = "button",
-  customClassName="",
+  size = 'small', // "small" || "big"
+  label = 'label',
+  type = 'button',
+  customClassName = '',
   handleKeyPress,
-  theme = "theme1",
-  buttonGroupName = "operand", //can be "equal" || "operand" || "action"
+  theme = 'theme1',
+  buttonGroupName = 'operand', //can be "equal" || "operand" || "action"
   ...props
 }) => {
   return (
@@ -21,11 +21,11 @@ const Button = ({
         ${customClassName} 
       `}
       {...props}
-      onClick = {handleKeyPress}
+      onClick={e => handleKeyPress(e)}
     >
       {label}
     </button>
-  );
-};
+  )
+}
 
-export { Button };
+export { Button }
