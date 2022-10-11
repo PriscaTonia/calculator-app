@@ -52,7 +52,9 @@ function App() {
 
       //  This is for the delete function
       if (activeKeyValue === del) {
-        setCurrentExpression(currentExpression.slice(0, -1))
+        console.log(currentExpression)
+        setCurrentExpression(currentExpression.slice(0, currentExpression.length -1))
+        console.log(memory, operator, currentExpression)
         return;
       }
 
@@ -214,7 +216,6 @@ function App() {
           setCheck(true);
           setMemory(null);
           setOperator(null);
-          setCurrentExpression(result);
           return;
 
         } else if(operator === "/"){

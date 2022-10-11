@@ -42,11 +42,14 @@
     background-color: var(--key-action-bg);
     box-shadow: 0px 4px 0px 0px var(--key-action-shadow);
 }
-.equal:hover{
-  opacity: 0.5;
+.action:hover{
+  filter: brightness(150%);
 }
-.operand:focus{
-  opacity: 0.2;
+.equal:hover{
+  filter: brightness(150%);
+}
+.operand:hover{
+  filter: brightness(150%);
 }
 
 

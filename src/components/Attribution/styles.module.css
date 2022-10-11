@@ -1,12 +1,13 @@
 /* Attribution styles */
 .attribution { 
-    font-size: 14px; 
+    font-size: 18px; 
     text-align: center; 
     position: absolute; 
      bottom: 0;
+     padding-bottom: 5px;
      color: var(--attribution-color);
 }
-.attribution a { color: var(--attribution); }
+.attribution a { color: var(--attribution); text-decoration: none; }
 
 
 /* Mobile Styles */

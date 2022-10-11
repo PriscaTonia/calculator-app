@@ -64,6 +64,10 @@ input[type="radio"] {
     transform: scale(1);
   }
 
+  input[type="radio"]:hover::before {
+    filter: brightness(150%);
+  }
+
   /* Mobile Styles */
 @media only screen and (min-width: 300px ) and (max-width: 600px),
 only screen and (min-device-width: 300px) and (max-device-width: 600px){
